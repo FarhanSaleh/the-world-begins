@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://lkvmjn50kd0j"]
+
+[ext_resource type="Script" uid="uid://c1ekdy1r6jrqh" path="res://Game/Scene/Enemy/enemy.gd" id="1_wqsww"]
+[ext_resource type="Script" uid="uid://blhvqt624fqkl" path="res://Game/Script/StateMachine/state_machine.gd" id="2_wqsww"]
+
+[node name="Enemy" type="CharacterBody2D" unique_id=686124132]
+z_index = -2
+collision_layer = 4
+script = ExtResource("1_wqsww")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=541933388]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=831086493]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=538271589]
+position = Vector2(0, 3)
+
+[node name="AttackArea" type="Area2D" parent="." unique_id=695693123]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AttackArea" unique_id=1267834512]
+
+[node name="StateMachine" type="Node" parent="." unique_id=1192373366]
+script = ExtResource("2_wqsww")

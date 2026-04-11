@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://1awjrkaowuk8"]
+
+[ext_resource type="Texture2D" uid="uid://h2v7c2brh3ak" path="res://Assets/ui/health-bar/health-bar-under.png" id="1_unogq"]
+[ext_resource type="Texture2D" uid="uid://5klhwcccy8vu" path="res://Assets/ui/health-bar/health-bar-over.png" id="2_n2hiq"]
+[ext_resource type="Texture2D" uid="uid://j4t0scnjluk1" path="res://Assets/ui/health-bar/health-bar-progress.png" id="3_qvvop"]
+[ext_resource type="Texture2D" uid="uid://cphmhgbneuddg" path="res://Assets/ui/stamina-bar/stamina-bar-under.png" id="4_hro7p"]
+[ext_resource type="Texture2D" uid="uid://dhikv803h1jj0" path="res://Assets/ui/stamina-bar/stamina-bar-over.png" id="5_xfv37"]
+[ext_resource type="Texture2D" uid="uid://bawmt0x5ehip" path="res://Assets/ui/stamina-bar/stamina-bar-progress.png" id="6_mwelw"]
+
+[node name="PlayerHUD" type="CanvasLayer" unique_id=882517203]
+
+[node name="Control" type="Control" parent="." unique_id=122195549]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Control" unique_id=1401554676]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/MarginContainer" unique_id=1060180682]
+layout_mode = 2
+theme_override_constants/separation = 1
+
+[node name="HealthBar" type="TextureProgressBar" parent="Control/MarginContainer/VBoxContainer" unique_id=1280880998]
+layout_mode = 2
+value = 100.0
+texture_under = ExtResource("1_unogq")
+texture_over = ExtResource("2_n2hiq")
+texture_progress = ExtResource("3_qvvop")
+
+[node name="MarginContainer" type="MarginContainer" parent="Control/MarginContainer/VBoxContainer" unique_id=1793960717]
+layout_mode = 2
+theme_override_constants/margin_left = 1
+
+[node name="StaminaBar" type="TextureProgressBar" parent="Control/MarginContainer/VBoxContainer/MarginContainer" unique_id=948642928]
+layout_mode = 2
+value = 100.0
+texture_under = ExtResource("4_hro7p")
+texture_over = ExtResource("5_xfv37")
+texture_progress = ExtResource("6_mwelw")
