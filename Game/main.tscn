@@ -465,7 +465,7 @@ tile_set = SubResource("TileSet_f5lw1")
 
 [node name="PlayerStateMachine" parent="." unique_id=930955277 instance=ExtResource("2_b0md6")]
 z_index = -1
-position = Vector2(424, 99)
+position = Vector2(521, 157)
 
 [node name="Background" type="Node2D" parent="." unique_id=1993131064]
 z_index = -2
@@ -487,4 +487,4 @@ centered = false
 [node name="PlayerHUD" parent="." unique_id=882517203 instance=ExtResource("6_o0bm1")]
 
 [node name="Enemy" parent="." unique_id=686124132 instance=ExtResource("6_sbhkq")]
-position = Vector2(465, 152)
+position = Vector2(377, 157)

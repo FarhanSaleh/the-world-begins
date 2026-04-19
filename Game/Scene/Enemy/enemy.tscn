@@ -21,3 +21,7 @@ position = Vector2(0, 3)
 
 [node name="StateMachine" type="Node" parent="." unique_id=1192373366]
 script = ExtResource("2_wqsww")
+
+[node name="StateLabel" type="Label" parent="." unique_id=1538078849]
+offset_right = 40.0
+offset_bottom = 23.0

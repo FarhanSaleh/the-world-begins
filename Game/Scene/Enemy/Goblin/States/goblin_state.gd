@@ -8,6 +8,7 @@ const FALLING: String = "Falling"
 const ATTACK1: String = "Attack1"
 const HURT: String = "Hurt"
 const DEAD: String = "Dead"
+const CHASE: String = "Chase"
 
 var goblin: Goblin
 var previous_state: String = IDLE
